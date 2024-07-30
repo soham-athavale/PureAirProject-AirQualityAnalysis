@@ -1,4 +1,4 @@
-# Website
+# PureAirProject
  Ensuring the availability of clean and pure air has become a critical determinant in
 safeguarding the health and well-being of communities, as well as preserving the delicate
 balance of the ecosystem. In this pursuit, the integration of machine learning-based
