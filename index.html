@@ -26,10 +26,10 @@
         <div class="toggle_btn"><img class="menu-icon" src="./img/menu.svg" alt="menu-icon">
         </div></div>
         <ul class="nav-list">
-          <li class="nav-links"><a href="https://blynk.io/">Check Pollution</a></li>
+          <li class="nav-links"><a href="Air_Quality_Real_Time_Analysis_Code.html">Check Pollution Analysis</a></li>
             <li class="nav-links"><a href="#about">About</a></li>
+            <li class="nav-links"><a href="#team">Documentation</a></li>
             <li class="nav-links"><a href="#events">Events</a></li>
-            <li class="nav-links"><a href="#team">Team</a></li>
             <li class="nav-links"><a href="#contact">Contact</a></li>
             
             
@@ -119,19 +119,50 @@
 </section>
 
 <section class="section section3" id="solutions">
+  <!--<h1 class="text-title2" style="color: rgb(214, 214, 214);"> Check <br> our Air Pollution Analysis here</h1>
+    <div class="text-center">
+      <form action="Air_Quality_Real_Time_Analysis_Code.html" target="_blank">
+        
+        <button class="joinbutton">Check</button>
+    </form>
+    </div>
     <h1 class="text-title2" style="color: rgb(214, 214, 214);">Solutions  <br> to Air Pollution</h1>
     <div class="text-center">
       <form action="solutions.html" target="_blank">
-        <!-- Create a button inside the form -->
-        <button class="joinbutton">Join</button>
+        
+        <button class="joinbutton">Read</button>
     </form>
     </div>
-
-<br><br><br>
-
-
+  -->
+  
 
 
+
+
+
+
+</section>
+
+<section class="section4" style=" margin: 0px;">
+  <div style="display: flex; justify-content: center; gap: 40px;">
+    <div style="text-align: center;">
+      <h1 class="text-title2" style="color: rgb(3, 3, 3);">Check <br> our Air Pollution Analysis here</h1>
+      <form action="Air_Quality_Real_Time_Analysis_Code.html" target="_blank">
+        <!-- Create a button inside the form -->
+        <button class="joinbutton" style="width: 200px;">Check</button>
+      </form>
+    </div>
+  
+    <div style="text-align: center;">
+      <h1 class="text-title2" style="color: rgb(0, 0, 0);">Solutions <br> to Air Pollution</h1>
+      <form action="solutions.html" target="_blank">
+        <!-- Create a button inside the form -->
+        <button class="joinbutton" style="width: 200px;">Read</button>
+      </form>
+    </div>
+  </div>
+  
+  
 
 </section>
 <section class="section section4" id="events">
@@ -207,14 +238,14 @@
   <!-- our team -->
   
   <section class="section section3" id="team">
-    <h1 class="text-title2" style="color: rgb(255, 255, 255);">Click Here to<br>Check Indoor Pollution</h1>
+    <h1 class="text-title2" style="color: rgb(255, 255, 255);">Click Here to<br>Download Documentation</h1>
     <br>
     <br>
     <div class="text-center">
       
       <form action="https://blynk.io/" target="_blank">
         <!-- Create a button inside the form -->
-        <button class="joinbutton">Check</button>
+        <button class="joinbutton" id="downloadButton">Check</button>
     </form>
     </div>
     
@@ -242,24 +273,37 @@
                     <li class="footer_list-item"><a href="#solutions" class="footer_list-link">SOLUTIONS</a></li>
                     <li class="footer_list-item"><a href="index.html" class="footer_list-link">HOME</a></li>
                 </div>
+                
 
                 </ul>
             </div>
 
         </div>
+
+        
+      
         <hr class="footer_divider" />
+        <div style="background-color: #282c34; color: white; text-align: center; margin-top: 30px; margin-bottom: 30px; padding: 20px; position: relative; width: 100vw; left: 50%; transform: translateX(-50%); font-family: Arial, sans-serif;">
+          <p style="margin: 0; font-size: 20px;">
+              Website Designed and Developed By 
+              <span style="font-weight: bold;">
+                  <a href="https://www.linkedin.com/in/soham-athavale/" style="color: #61dafb; text-decoration: none;">Soham Athavale</a>
+              </span>
+          </p>
+      </div>
+      
         <div class="footer_bottom">
             <ul class="footer_list footer_list--bottom">
                 <li class="footer_list-item">
-                    <a href="#" class="footer_list-link">
+                    <a href="https://www.linkedin.com/in/soham-athavale/" class="footer_list-link">
                         <img class="footer-svg" src="../img/facebook.svg" alt=""></a>
-                        <a href="#" class="footer_list-link">
+                        <a href="https://www.linkedin.com/in/soham-athavale/" class="footer_list-link">
 
                          <img class="footer-svg" src="../img/linkedin.svg" alt=""></a>
-                        <a href="#" class="footer_list-link">
+                        <a href="https://www.linkedin.com/in/soham-athavale/" class="footer_list-link">
 
                        <img class="footer-svg" src="../img/youtube.svg" alt=""> </a> 
-                        <a href="#" class="footer_list-link">
+                        <a href="https://www.linkedin.com/in/soham-athavale/" class="footer_list-link">
 
                          <img class="footer-svg" src="../img/instagram.svg" alt="">
                     </a>
@@ -267,9 +311,20 @@
              </li>
             </ul>
         </div>
+        
     </div>
 
 </footer>
+<script>
+  document.getElementById("downloadButton").addEventListener("click", function() {
+      const link = document.createElement("a");
+      link.href = "Air Quality Project Report 24 April 24.pdf"; // Change this to the path of your file
+      link.download = "Air Quality Project Report.pdf"; // Name the downloaded file
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+  });
+</script>
     <script src="index.js"></script>
 
 
