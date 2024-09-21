@@ -243,10 +243,10 @@
     <br>
     <div class="text-center">
       
-      <form action="https://blynk.io/" target="_blank">
+      
         <!-- Create a button inside the form -->
         <button class="joinbutton" id="downloadButton">Check</button>
-    </form>
+    
     </div>
     
    
@@ -316,14 +316,19 @@
 
 </footer>
 <script>
-  document.getElementById("downloadButton").addEventListener("click", function() {
-      const link = document.createElement("a");
-      link.href = "Air Quality Project Report 24 April 24.pdf"; // Change this to the path of your file
-      link.download = "Air Quality Project Report.pdf"; // Name the downloaded file
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-  });
+  document.getElementById("downloadButton").addEventListener("click", function(event) {
+        event.preventDefault(); // Prevents page reload
+
+        // Create a temporary <a> element for the download
+        const link = document.createElement('a');
+        link.href = 'Air Quality Project Report 24 April 24.pdf'; // Replace with your file path
+        link.download = 'Air Quality Project Report.pdf'; // Optional: specify the file name
+
+        // Append the link to the document, trigger click, and remove it
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
 </script>
     <script src="index.js"></script>
 
